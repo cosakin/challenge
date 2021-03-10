@@ -37,16 +37,3 @@ export function sortDesc(arr, field) {
     return 0
   })
 }
-
-export function addNewFilter(filter, posts) {
-  let index = posts.indexOf(filter)
-  if (index === -1) posts.push(filter)
-
-  return posts
-}
-
-export function removeFilter(filter, posts) {
-  let index = posts.indexOf(filter)
-  posts.splice(index, 1)
-  return posts
-}
